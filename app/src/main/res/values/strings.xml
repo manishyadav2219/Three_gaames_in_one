@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Three Games in One</string>
+    <string name="title_activity_tictac">TIC-TAC-TOE</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_guessing">guessing</string>
+    <string name="title_activity_main3">Main3Activity</string>
+</resources>

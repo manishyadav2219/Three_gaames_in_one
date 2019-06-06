@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:clipToPadding="false"
+    android:splitMotionEvents="false"
+    tools:context=".TTTStart">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/quicksand"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:text="Tic-Tac-Toe"
+            android:layout_above="@id/subtitle"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="48sp" />
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Play against an AI opponent or a Human opponent"
+            android:fontFamily="@font/opensans"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_above="@id/single_btn"
+            android:layout_marginBottom="160dp"/>
+        <Button
+            android:id="@+id/single_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_selector"
+            android:fontFamily="@font/opensans"
+            android:onClick="single_play"
+            android:gravity="center"
+            android:text="Single player"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_above="@id/multi_btn"/>
+
+        <Button
+            android:id="@+id/multi_btn"
+            android:fontFamily="@font/opensans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:onClick="multi_play"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Multi player"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_above="@id/back_btn"/>
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="16dp"
+            android:text="Go back"
+            android:textSize="18sp"
+            android:onClick="fin"
+            android:fontFamily="@font/opensans"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_above="@id/extra_view"
+            android:layout_centerHorizontal="true"/>
+        <View
+            android:id="@+id/extra_view"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>
